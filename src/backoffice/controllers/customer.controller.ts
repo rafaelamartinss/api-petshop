@@ -2,7 +2,7 @@ import { Body, Controller, Delete, Get, Param, Post, Put } from "@nestjs/common"
 import { Customer } from "../models/customer.model";
 import { Result } from "../models/result.model";
 
-@Controller('customer')
+@Controller('/v1/customer')
 export class CustomerController {
     @Get()
     findAll() {
